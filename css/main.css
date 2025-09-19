@@ -1,0 +1,32 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(150, 150, 150);
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+  font-size: 100px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.card:hover {
+  box-shadow: 0 0 20px black;
+}
