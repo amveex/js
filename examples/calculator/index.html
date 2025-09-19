@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Calculator</title>
+
+</head>
+<body>
+    
+    <div class="calc">
+
+        <input id="FIELD" class="field" type="text">
+
+        <div class="wrap">
+
+            <div class="row">
+                <p class="num" onclick="pick(7)">7</p>  <p class="num" onclick="pick(8)">8</p>  <p class="num" onclick="pick(9)">9</p>  <p class="operator" onclick="pick('+')">+</p>
+            </div>
+
+            <div class="row">
+                <p class="num" onclick="pick(4)">4</p>  <p class="num" onclick="pick(5)">5</p>  <p class="num" onclick="pick(6)">6</p>  <p class="operator" onclick="pick('-')">-</p>
+            </div>
+
+            <div class="row">
+                <p class="num" onclick="pick(1)">1</p>  <p class="num" onclick="pick(2)">2</p>  <p class="num" onclick="pick(3)">3</p>  <p class="operator" onclick="pick('*')">*</p>
+            </div>
+
+            <div class="row">
+                <p class="clear" onclick="reset()">C</p>  <p class="num" onclick="pick(0)">0</p>  <p class="operator" onclick="calculate()">=</p>  <p class="operator" onclick="pick('/')">/</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
