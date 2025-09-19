@@ -1,12 +1,18 @@
-function pick(num) {
-    let value = num;
-    let field = document.getElementById("FIELD");
+let field = document.getElementById("FIELD");
 
+function pick(symbol) {
+    let value = symbol;
     field.value += value;
 }
 
 function reset() {
-    let field = document.getElementById("FIELD");
+    field.value = "";
+}
 
-    field.value = null;
+function calculate() {
+    try {
+        field.value = eval(field.value);
+    } catch (err) {
+        field.value = "Error";
+    }
 }
