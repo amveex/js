@@ -1,0 +1,77 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(150, 150, 150);
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    background: rgb(200, 200, 200);
+    border-radius: 5px;
+
+    .field {
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        gap: 25px;
+    }
+
+    .num {
+        background: white;
+        transition: 0.1s;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    .operator {
+        background: black;
+        color: white;
+        transition: 0.1s;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    .clear {
+        background: red;
+        color: white;
+        transition: 0.1s;
+
+        &:hover {
+            scale: 1.1;
+        }
+    }
+
+    p {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
