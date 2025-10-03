@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img {
+  position: relative;
+  display: none;
+  animation-name: fading;
+  animation-duration: 1s;
+}
+.container .showImg {
+  display: block;
+}
+.container button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container .left {
+  left: 20px;
+}
+.container .right {
+  right: 20px;
+}
+
+@keyframes fading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
