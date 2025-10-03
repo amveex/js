@@ -1,3 +1,7 @@
+html {
+  background: rgb(150, 150, 150);
+}
+
 .container {
   position: relative;
   width: 100vw;
