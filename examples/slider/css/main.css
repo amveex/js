@@ -15,6 +15,7 @@ html {
   display: none;
   animation-name: fading;
   animation-duration: 1s;
+  width: 80%;
 }
 .container .showImg {
   display: block;
