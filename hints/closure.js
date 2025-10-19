@@ -11,5 +11,3 @@ function another() {
 
     defined();
 }
-
-another();
