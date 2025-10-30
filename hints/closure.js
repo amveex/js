@@ -11,3 +11,5 @@ function another() {
 
     defined();
 }
+
+another();

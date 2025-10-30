@@ -15,3 +15,5 @@ function recursion() {
 
     recursion(); // calls itself || beginning of recursion
 }
+
+recursion();
