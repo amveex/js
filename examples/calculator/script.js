@@ -3,6 +3,7 @@ let A = null;
 let numA = null;
 let B = null;
 let numB = null;
+let sum = null;
 let symbol = null;
 
 
@@ -12,6 +13,7 @@ function reset() {
     numA = null;
     B = null;
     numB = null;
+    sum = null;
     symbol = null;
 }
 
@@ -22,8 +24,12 @@ function pickNumber(number) {
 
 
 function pickOperator(operator) {
-    A = field.value;
     symbol = operator;
+    
+    if (A == null) {
+        A = field.value;
+    }
+
     field.value = "";
 }
 
@@ -35,16 +41,24 @@ function calculate() {
 
     switch (symbol) {
         case '+':
-            field.value = numA + numB;
+            sum = numA + numB;
+            field.value = sum;
+            A = sum;
             break;
         case '-':
-            field.value = numA - numB;
+            sum = numA - numB;
+            field.value = sum;
+            A = sum;
             break;
         case '*':
-            field.value = numA * numB;
+            sum = numA * numB;
+            field.value = sum;
+            A = sum;
             break;
         case '/':
-            field.value = numA / numB;
+            sum = numA / numB;
+            field.value = sum;
+            A = sum;
             break;
     }
 }
