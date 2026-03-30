@@ -1,9 +1,10 @@
 let field = document.getElementById("FIELD");
+
+
 let A = null;
 let numA = null;
 let B = null;
 let numB = null;
-let sum = null;
 let symbol = null;
 
 
@@ -13,7 +14,6 @@ function reset() {
     numA = null;
     B = null;
     numB = null;
-    sum = null;
     symbol = null;
 }
 
@@ -41,24 +41,22 @@ function calculate() {
 
     switch (symbol) {
         case '+':
-            sum = numA + numB;
-            field.value = sum;
-            A = sum;
+            showResult(numA + numB);
             break;
         case '-':
-            sum = numA - numB;
-            field.value = sum;
-            A = sum;
+            showResult(numA - numB);
             break;
         case '*':
-            sum = numA * numB;
-            field.value = sum;
-            A = sum;
+            showResult(numA * numB);
             break;
         case '/':
-            sum = numA / numB;
-            field.value = sum;
-            A = sum;
+            showResult(numA / numB);
             break;
     }
+}
+
+
+function showResult(result) {
+    field.value = result;
+    A = result;
 }
